@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRent | Wypożyczalnia samochodów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AutoRent</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#offer">Oferta</a></li>
+                <li><a href="index.html#reservation">Rezerwacja</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Kontakt</h1>
+            <p>Skontaktuj się z nami za pomocą poniższych danych kontaktowych lub wypełnij formularz, aby wysłać zapytanie.</p>
+            
+            <div class="contact-info">
+                <h2>Nasze dane kontaktowe:</h2>
+                <p><strong>Adres:</strong> ul. Przykładowa 123, 00-000 Warszawa</p>
+                <p><strong>Email:</strong> kontakt@autorent.pl</p>
+                <p><strong>Telefon:</strong> 123 456 789</p>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutoRent. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
