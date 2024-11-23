@@ -56,14 +56,24 @@
                     <p>Cena od 500 PLN/dzień</p>
                 </div>
                 <div class="car-card">
-                    <img src="img/seat.jpg" alt="Samochód 4">
+                    <img src="img/seat.jpg" alt="Samochód 5">
                     <h3>Seat Leon</h3>
                     <p>Cena od 200 PLN/dzień</p>
                 </div>
                 <div class="car-card">
-                    <img src="img/mazda6.jpg.avif" alt="Samochód 5">
+                    <img src="img/mazda6.jpg.avif" alt="Samochód 6">
                     <h3>Mazda 6</h3>
                     <p>Cena od 200 PLN/dzień</p>
+                </div>
+                <div class="car-card">
+                    <img src="img/nissan.jpg" alt="Samochód 7">
+                    <h3>Nissan Qashqai</h3>
+                    <p>Cena od 250 PLN/dzień</p>
+                </div>
+                <div class="car-card">
+                    <img src="img/i30.jpg" alt="Samochód 8">
+                    <h3>Hyundai i30</h3>
+                    <p>Cena od 100 PLN/dzień</p>
                 </div>
             </div>
         </section>
@@ -73,15 +83,21 @@
             <form class="reservation-form">
                 <label for="name">Imię i nazwisko:</label>
                 <input type="text" id="name" name="name" required>
-
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="contact">Numer telefonu:</label>
+                <input type="text" id="contact" name="contact" required>
                 <label for="car">Wybierz samochód:</label>
-                <select id="car" name="car" aria-placeholder="Wybierz opcje" required>
+                <select id="car" name="car" required>
+                    <option value="" disabled selected>Wybierz pojazd</option>
                     <option value="Ford Fiesta">Ford Fiesta</option>
                     <option value="BMW 3">BMW 3</option>
                     <option value="Audi A4">Audi A4</option>
                     <option value="JeepGrCh">Jeep Grand Cherokee</option>
                     <option value="Seat">Seat Leon</option>
                     <option value="Mazda">Mazda 6</option>
+                    <option value="Qashqai">Nissan Qashqai</option>
+                    <option value="Hyundai">Hyundai i30</option>
                 </select>
 
                 <label for="date">Data wynajmu:</label>
