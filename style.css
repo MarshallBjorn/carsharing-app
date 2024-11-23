@@ -31,6 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    height: 3rem;
     background-color: #404040;
     color: white;
     position: sticky;
@@ -48,6 +49,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
     gap: 15px;
 }
 
@@ -59,14 +61,22 @@ header {
     text-align: center; /* Opcjonalnie wyrównanie tekstu */
     color: white; /* Changes link text to white */
     text-decoration: none; /* Removes the underline */
+    margin: 0;
+
+}
+
+.nav-links ul{
+    margin: 0;
 }
 
 .nav-links li {
     margin: 0; /* Brak dodatkowych marginesów między elementami */
+    padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Dodanie linii pod linkami */
 }
 
 .nav-links a:hover {
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.1); /* Lekki efekt hover */
 }
 
@@ -110,12 +120,17 @@ header {
 
 .hero .btn {
     background: #ff5733;
+    border-radius: 3px;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
     margin-top: 1rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #e62a00;
 }
 
 .hero h1, .hero p, .hero .btn {
@@ -132,6 +147,7 @@ section {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 
 .car-card {
@@ -155,8 +171,13 @@ section {
     padding: 0.75rem 1.5rem;
     border: none;
     margin-top: 1rem;
+    height: 3rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+.reservation-form .btn:hover {
+    background-color: #e62a00;
 }
 
 .reservation-form label {
@@ -164,6 +185,8 @@ section {
 }
 
 .reservation-form input, .reservation-form select, .reservation-form button {
+    border: 2px solid lightgray;
+    border-radius: 3px;
     padding: 0.5rem;
     margin-top: 0.5rem;
 }
@@ -181,11 +204,19 @@ footer {
         display: none; /* Ukryte menu domyślnie */
         flex-direction: column; /* Menu rozwija się w pionie */
         width: 100%; /* Zajmuje całą szerokość */
-        background-color: #666666; /* Tło menu */
+        background-color: #404040; /* Tło menu */
         position: absolute;
         top: 50px; /* Dopasowane do wysokości navbaru */
         left: 0;
         z-index: 1000;
+        margin-bottom: 0;
+    }
+    .nav-links li:first-child{
+        margin: 0;
+    }
+
+    .nav-links li {
+        margin-top: -1rem;
     }
 
     .nav-links.active {
