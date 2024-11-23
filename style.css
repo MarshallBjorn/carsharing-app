@@ -51,20 +51,23 @@ header {
     gap: 15px;
 }
 
-.nav-links li {
-    padding: 5px;
+/* Mobile menu links */
+.nav-links a {
+    display: block; /* Cały obszar linka jest klikalny */
+    padding: 10px 20px; /* Odstępy, aby łatwo było kliknąć */
+    width: 100%; /* Link zajmuje całą szerokość */
+    text-align: center; /* Opcjonalnie wyrównanie tekstu */
+    color: white; /* Changes link text to white */
+    text-decoration: none; /* Removes the underline */
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.nav-links li {
+    margin: 0; /* Brak dodatkowych marginesów między elementami */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Dodanie linii pod linkami */
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); /* Lekki efekt hover */
 }
 
 .burger {
@@ -175,21 +178,22 @@ footer {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #666666;
+        display: none; /* Ukryte menu domyślnie */
+        flex-direction: column; /* Menu rozwija się w pionie */
+        width: 100%; /* Zajmuje całą szerokość */
+        background-color: #666666; /* Tło menu */
         position: absolute;
-        top: 60px;
-        left: 0;display: none;
+        top: 50px; /* Dopasowane do wysokości navbaru */
+        left: 0;
+        z-index: 1000;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Pokazanie menu po kliknięciu burgera */
     }
 
     .burger {
-        display: block;
+        display: block; /* Pokazuje ikonę burgera */
     }
 
     .car-grid {
